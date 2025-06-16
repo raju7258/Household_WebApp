@@ -8,6 +8,9 @@ on:
         description: "Environment to deploy to"
         required: true
         default: "dev"
+  push:
+    branches:
+      - dev
 env:
   ENVIRONMENT: ${{ inputs.environment }}
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
