@@ -1,0 +1,9 @@
+terraform {
+  backend "s3" {
+    bucket = "rajeshnair-terraform-state"
+    key = "household_webapp/dev.tfstate"
+    region = "us-east-1"
+    use_lockfile = true
+    encrypt = true
+  }
+}
