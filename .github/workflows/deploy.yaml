@@ -1,6 +1,5 @@
 name: "Terraform CI"
 description: "Runs Terraform CI"
-author: "Rajesh Nair"
 on:
   workflow_dispatch:
     inputs:
